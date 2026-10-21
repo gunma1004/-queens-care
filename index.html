@@ -16,14 +16,6 @@
   <meta property="og:description" content="김포·고양 및 서울·경기·인천 퀸즈케어. 건식·아로마·스웨디시·VIP·한국관리사 코스 안내. 0507-1280-3296">
   <meta property="og:url" content="https://queens-care.netlify.app/">
   <meta property="og:image" content="https://quickhomecare.emperorweb.net/img/78.webp">
-  <meta property="og:image:width" content="920">
-  <meta property="og:image:height" content="1280">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="김포·고양·수도권 출장 프라이빗케어 마사지 | 퀸즈케어">
-  <meta name="twitter:description" content="김포·고양 및 서울·경기·인천 출장 프라이빗케어 퀸즈케어. 24시간 상담 0507-1280-3296">
-  <meta name="twitter:image" content="https://quickhomecare.emperorweb.net/img/78.webp">
 
   <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
@@ -32,21 +24,6 @@
     "@type": "WebPage",
     "name": "김포·고양·수도권 출장 프라이빗케어 마사지",
     "url": "https://queens-care.netlify.app/",
-    "description": "김포·고양을 비롯한 서울·경기·인천 전지역 출장 프라이빗케어 마사지 전문 퀸즈케어",
-    "image": [
-      "https://quickhomecare.emperorweb.net/img/78.webp",
-      "https://quickhomecare.emperorweb.net/img/33.webp",
-      "https://quickhomecare.emperorweb.net/img/61.webp",
-      "https://quickhomecare.emperorweb.net/img/12.webp",
-      "https://quickhomecare.emperorweb.net/img/52.webp",
-      "https://quickhomecare.emperorweb.net/img/24.webp",
-      "https://quickhomecare.emperorweb.net/img/40.webp"
-    ],
-    "isPartOf": {
-      "@type": "WebSite",
-      "name": "퀸즈케어",
-      "url": "https://queens-care.netlify.app/"
-    },
     "about": {
       "@type": "Service",
       "name": "김포·고양 및 수도권 출장 프라이빗케어 마사지",
@@ -56,13 +33,237 @@
   }
   </script>
 
-  <link rel="preconnect" href="https://quickhomecare.emperorweb.net">
-  <link rel="preload" as="image" href="https://quickhomecare.emperorweb.net/img/78.webp">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- 웹폰트 로드 -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+
+  <!-- 전용 인라인 CSS 스타일 (경로 오류 완전 방지) -->
+  <style>
+    :root {
+      --bg-main: #fbf9f5;
+      --bg-card: #ffffff;
+      --text-primary: #1c1917;
+      --text-secondary: #57534e;
+      --text-muted: #857f72;
+      --accent-gold: #c29b38;
+      --accent-brown: #b07d4f;
+      --accent-dark: #23201e;
+      --border-light: rgba(220, 214, 203, 0.7);
+      --font-serif: "Nanum Myeongjo", "Batang", serif;
+      --font-sans: "Pretendard", -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg-main);
+      color: var(--text-primary);
+      line-height: 1.65;
+      word-break: keep-all;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; height: auto; display: block; }
+    .wrap { width: 92%; max-width: 1240px; margin: 0 auto; }
+
+    /* Header */
+    .site-header {
+      position: sticky; top: 0; z-index: 100;
+      background-color: rgba(251, 249, 245, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-light);
+      padding: 1.1rem 0;
+    }
+    .nav-row { display: flex; align-items: center; justify-content: space-between; }
+    .brand { display: flex; align-items: center; gap: 0.6rem; font-size: 1.25rem; font-weight: 700; }
+    .brand-dot { width: 10px; height: 10px; background-color: var(--accent-gold); border-radius: 50%; display: inline-block; }
+    .desktop-nav { display: flex; gap: 2rem; }
+    .desktop-nav a { font-size: 0.95rem; color: var(--text-secondary); font-weight: 500; transition: color 0.2s; }
+    .desktop-nav a:hover { color: var(--accent-gold); }
+    .header-cta {
+      background-color: var(--accent-dark); color: #fff;
+      padding: 0.55rem 1.3rem; border-radius: 999px;
+      font-size: 0.9rem; font-weight: 600;
+    }
+    .menu-toggle { display: none; background: none; border: none; }
+
+    /* Hero */
+    .home-hero { padding: 4.5rem 0 3.5rem; }
+    .home-hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; align-items: center; gap: 3.5rem; }
+    .eyebrow {
+      display: inline-block; font-size: 0.8rem; letter-spacing: 0.15em; font-weight: 700;
+      color: var(--accent-brown); margin-bottom: 1rem; text-transform: uppercase;
+      position: relative; padding-left: 1.8rem;
+    }
+    .eyebrow::before {
+      content: ""; position: absolute; left: 0; top: 50%;
+      width: 1.2rem; height: 2px; background-color: var(--accent-brown);
+    }
+    .hero-copy h1 { font-family: var(--font-serif); font-size: 2.85rem; font-weight: 400; line-height: 1.28; margin-bottom: 1.5rem; }
+    .hero-copy h1 span { display: block; }
+    .hero-copy p { font-size: 1.02rem; color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.75; }
+    .hero-actions { display: flex; gap: 1rem; margin-bottom: 2rem; }
+    .hero-actions .primary {
+      background-color: var(--accent-dark); color: #fff;
+      padding: 0.85rem 1.8rem; border-radius: 999px; font-weight: 600; font-size: 0.95rem;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+    }
+    .hero-actions .secondary {
+      background-color: #fff; border: 1px solid var(--border-light);
+      padding: 0.85rem 1.8rem; border-radius: 999px; font-weight: 600; font-size: 0.95rem;
+    }
+    .hero-tags { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+    .hero-tags span { background-color: #f1ede4; color: #6a6458; font-size: 0.8rem; padding: 0.35rem 0.8rem; border-radius: 6px; }
+
+    /* Hero Media (사진 깨짐 방지 핵심 규격) */
+    .hero-media {
+      position: relative; border-radius: 28px; background: #ede6da; padding: 1.2rem;
+      box-shadow: 0 20px 45px rgba(50,40,30,0.06); max-width: 520px; margin-left: auto;
+    }
+    .hero-main { border-radius: 20px; overflow: hidden; position: relative; }
+    .hero-main img { width: 100%; height: 500px; object-fit: cover; border-radius: 20px; }
+    .hero-main figcaption {
+      position: absolute; bottom: 16px; left: 16px; background: rgba(255, 255, 255, 0.92);
+      padding: 0.35rem 1rem; border-radius: 999px; font-size: 0.75rem; letter-spacing: 0.1em;
+      font-weight: 700; color: #2b2520;
+    }
+    .hero-mini {
+      position: absolute; right: -24px; width: 170px; border-radius: 18px; overflow: hidden;
+      border: 4px solid #fff; box-shadow: 0 12px 28px rgba(0,0,0,0.14);
+    }
+    .hero-mini img { width: 100%; height: 180px; object-fit: cover; }
+    .hero-mini.top { top: 30px; }
+    .hero-mini.bottom { bottom: 40px; }
+
+    /* Focus Section */
+    .focus-section { padding: 1rem 0 3rem; }
+    .focus-box {
+      background: linear-gradient(135deg, #f5eee4 0%, #ede3d3 100%);
+      border: 1.5px solid #dccbb6; border-radius: 20px; padding: 2.2rem 2.8rem;
+      display: flex; justify-content: space-between; align-items: center; gap: 2rem;
+    }
+    .focus-text h2 { font-family: var(--font-serif); font-size: 1.6rem; margin-bottom: 0.6rem; color: #3b2a1a; }
+    .focus-text p { color: #635749; font-size: 0.95rem; }
+    .focus-quick-list { display: flex; flex-direction: column; gap: 0.6rem; min-width: 260px; }
+    .badge-item { background: #ffffff; padding: 0.65rem 1.2rem; border-radius: 10px; font-size: 0.88rem; color: #3f3325; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+
+    /* Common Section */
+    .section { padding: 4.5rem 0; }
+    .section-heading { margin-bottom: 2.5rem; display: flex; justify-content: space-between; align-items: flex-end; }
+    .section-heading h2 { font-family: var(--font-serif); font-size: 2.1rem; font-weight: 400; line-height: 1.35; color: #171513; }
+    .section-heading p { max-width: 440px; font-size: 0.95rem; color: var(--text-secondary); }
+
+    /* Region Cards */
+    .region-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    .region-cards a {
+      background: #fff; border: 1px solid var(--border-light); border-radius: 18px; padding: 2rem;
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .region-cards a:hover { transform: translateY(-4px); box-shadow: 0 14px 30px rgba(0,0,0,0.06); }
+    .region-cards span { font-size: 0.85rem; color: var(--accent-brown); font-weight: 700; display: block; margin-bottom: 0.8rem; }
+    .region-cards h3 { font-size: 1.3rem; font-weight: 600; margin-bottom: 0.5rem; }
+    .region-cards p { font-size: 0.9rem; color: var(--text-muted); }
+
+    /* Gallery Carousel */
+    .gallery-block { padding: 3.5rem 0; }
+    .carousel-viewport { overflow-x: auto; scrollbar-width: thin; padding-bottom: 1.5rem; }
+    .carousel-track { display: flex; gap: 1.2rem; width: max-content; }
+    .gallery-card { width: 250px; background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 6px 18px rgba(0,0,0,0.04); }
+    .gallery-card img { width: 100%; height: 330px; object-fit: cover; }
+    .gallery-card figcaption { padding: 0.9rem 1.1rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; font-weight: 600; }
+    .gallery-card figcaption i { font-style: normal; font-size: 0.75rem; color: var(--text-muted); }
+
+    /* Course Cards (5개 코스 그리드) */
+    .course-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; }
+    .course-card {
+      background: #fff; border: 1px solid var(--border-light); border-radius: 20px; padding: 2.2rem 1.8rem;
+      display: flex; flex-direction: column; transition: all 0.25s;
+    }
+    .course-card:hover { transform: translateY(-6px); box-shadow: 0 16px 36px rgba(0,0,0,0.07); border-color: #d6b889; }
+    .course-head { display: flex; justify-content: space-between; margin-bottom: 1.2rem; font-size: 0.85rem; color: var(--accent-brown); font-weight: 700; }
+    .course-card h3 { font-size: 1.55rem; font-family: var(--font-serif); font-weight: 400; margin-bottom: 0.8rem; }
+    .course-card p { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 2rem; flex-grow: 1; }
+    .course-card ul { list-style: none; border-top: 1px solid #f0eae1; padding-top: 1.2rem; }
+    .course-card li { display: flex; justify-content: space-between; padding: 0.45rem 0; font-size: 0.92rem; }
+    .course-card li b { font-weight: 700; color: #1a1816; }
+
+    /* Principles */
+    .principle-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+    .principle-grid article { background: #fff; border: 1px solid var(--border-light); border-radius: 18px; padding: 2.2rem; }
+    .principle-grid article span { font-size: 1rem; font-weight: 700; color: var(--accent-brown); margin-bottom: 1rem; display: inline-block; }
+    .principle-grid article h3 { font-size: 1.25rem; margin-bottom: 0.6rem; }
+    .principle-grid article p { color: var(--text-secondary); font-size: 0.92rem; }
+
+    /* Places Grid & Chips */
+    .region-panel { background: #fff; border: 1px solid var(--border-light); border-radius: 20px; padding: 2.2rem; margin-bottom: 2rem; }
+    .region-panel-head { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 1.5rem; }
+    .region-panel-head small { font-size: 0.8rem; color: var(--text-muted); }
+    .region-panel-head h3 { font-family: var(--font-serif); font-size: 1.65rem; font-weight: 400; }
+    .region-panel-head a { font-size: 0.9rem; color: var(--accent-brown); font-weight: 600; }
+    .place-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 0.8rem; }
+    .place-chip {
+      display: flex; justify-content: space-between; align-items: center; background: #fff;
+      border: 1px solid var(--border-light); border-radius: 12px; padding: 0.75rem 1rem;
+      font-size: 0.9rem; font-weight: 500; transition: all 0.2s;
+    }
+    .place-chip:hover { background: var(--accent-dark); color: #fff; border-color: var(--accent-dark); }
+    .place-chip.highlight { background: #fdfaf3; border-color: #e5cdb4; font-weight: 600; }
+    .place-chip b { font-weight: 400; font-size: 0.8rem; opacity: 0.5; }
+
+    /* Closing Banner */
+    .closing-card {
+      background-color: var(--accent-dark); color: #fff; border-radius: 26px; padding: 3.5rem 4rem;
+      display: flex; justify-content: space-between; align-items: center; gap: 2.5rem; margin: 3rem auto;
+    }
+    .closing-card .eyebrow { color: #cca474; }
+    .closing-card .eyebrow::before { background-color: #cca474; }
+    .closing-card h2 { font-family: var(--font-serif); font-size: 2.2rem; font-weight: 400; line-height: 1.35; margin-bottom: 0.8rem; }
+    .closing-card p { color: #a8a29e; font-size: 0.95rem; }
+    .closing-card a {
+      background: #ffffff; color: #171513; padding: 1.2rem 2.2rem; border-radius: 18px;
+      display: flex; flex-direction: column; align-items: center; min-width: 230px; transition: transform 0.2s;
+    }
+    .closing-card a:hover { transform: translateY(-3px); background: #f4ede3; }
+    .closing-card a span { font-size: 0.8rem; color: #78716c; }
+    .closing-card a strong { font-size: 1.35rem; color: #000; letter-spacing: -0.01em; }
+
+    /* Footer & Floating CTA */
+    .site-footer { background: #f3efe9; border-top: 1px solid var(--border-light); padding: 3rem 0; font-size: 0.9rem; color: var(--text-secondary); }
+    .footer-grid { display: flex; justify-content: space-between; align-items: center; }
+    .footer-grid strong { font-size: 1.1rem; color: #1a1816; }
+    .footer-call { text-align: right; }
+    .footer-call b { font-size: 1.35rem; color: #171513; display: block; }
+    .floating-cta {
+      position: fixed; bottom: 24px; right: 24px; background: var(--accent-dark); color: #fff;
+      border-radius: 14px; padding: 0.75rem 1.25rem; display: flex; flex-direction: column; align-items: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.22); z-index: 999;
+    }
+    .floating-cta span { font-size: 0.7rem; color: #d8cebe; }
+    .floating-cta strong { font-size: 0.98rem; }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .home-hero-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .hero-media { max-width: 580px; margin: 0 auto; }
+      .focus-box { flex-direction: column; align-items: flex-start; }
+      .closing-card { flex-direction: column; text-align: center; padding: 2.5rem 1.8rem; }
+    }
+    @media (max-width: 768px) {
+      .desktop-nav { display: none; }
+      .hero-copy h1 { font-size: 2.15rem; }
+      .hero-mini { display: none; }
+      .region-cards, .principle-grid { grid-template-columns: 1fr; }
+      .section-heading { flex-direction: column; align-items: flex-start; gap: 0.8rem; }
+      .footer-grid { flex-direction: column; align-items: flex-start; gap: 1.5rem; }
+      .footer-call { text-align: left; }
+    }
+  </style>
 </head>
 <body class="theme-home">
 
-  <!-- 상단 네비게이션 헤더 -->
+  <!-- Header -->
   <header class="site-header">
     <div class="wrap nav-row">
       <a class="brand" href="/">
@@ -77,18 +278,14 @@
         <a href="#courses">코스&가격</a>
       </nav>
       <a class="header-cta" href="tel:0507-1280-3296">24시간 상담</a>
-      <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-controls="site-menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
     </div>
-    <div class="nav-shade" aria-hidden="true"></div>
   </header>
 
   <main>
-    <!-- 히어로 섹션 -->
+    <!-- Hero Section -->
     <section class="home-hero">
       <div class="wrap home-hero-grid">
-        <div class="hero-copy reveal">
+        <div class="hero-copy">
           <span class="eyebrow">QUEENS CARE · 24H PRIVILEGE</span>
           <h1>
             <span>김포·고양·수도권</span>
@@ -111,16 +308,16 @@
           </div>
         </div>
 
-        <div class="hero-media reveal">
+        <div class="hero-media">
           <figure class="hero-main">
-            <img src="https://quickhomecare.emperorweb.net/img/78.webp" alt="김포 고양 출장 프라이빗케어 마사지 퀸즈케어" width="920" height="1280" loading="eager" decoding="async" fetchpriority="high">
+            <img src="https://quickhomecare.emperorweb.net/img/78.webp" alt="김포 고양 출장 프라이빗케어 마사지 퀸즈케어" width="920" height="1280">
             <figcaption>QUEENS CARE</figcaption>
           </figure>
           <figure class="hero-mini top">
-            <img src="https://quickhomecare.emperorweb.net/img/01.webp" alt="퀸즈케어 아로마 케어 분위기" width="920" height="1280" loading="lazy" decoding="async">
+            <img src="https://quickhomecare.emperorweb.net/img/01.webp" alt="퀸즈케어 아로마 케어 분위기">
           </figure>
           <figure class="hero-mini bottom">
-            <img src="https://quickhomecare.emperorweb.net/img/31.webp" alt="퀸즈케어 프라이빗 힐링 분위기" width="920" height="1280" loading="lazy" decoding="async">
+            <img src="https://quickhomecare.emperorweb.net/img/31.webp" alt="퀸즈케어 프라이빗 힐링 분위기">
           </figure>
         </div>
       </div>
@@ -129,7 +326,7 @@
     <!-- 김포·고양 집중 특화 배너 -->
     <section class="section focus-section" id="focus-region">
       <div class="wrap">
-        <div class="focus-box reveal">
+        <div class="focus-box">
           <div class="focus-text">
             <span class="eyebrow">KEY SERVICE REGION</span>
             <h2>김포·고양 및 인근 서북부 집중 케어 존</h2>
@@ -149,14 +346,14 @@
     <!-- 지역 선택 바로가기 -->
     <section class="section region-select" id="regions">
       <div class="wrap">
-        <div class="section-heading reveal">
+        <div class="section-heading">
           <div>
             <span class="eyebrow">AREA COVERAGE</span>
             <h2>지금 머무시는 지역을 선택하세요</h2>
           </div>
           <p>김포·고양 중심 거점부터 서울, 경기 전지역, 인천 생활권까지 편안한 자택, 오피스텔, 호텔로 방문합니다.</p>
         </div>
-        <div class="region-cards reveal">
+        <div class="region-cards">
           <a href="/gyeonggi/gimpo/">
             <span>01</span>
             <h3>김포시 전역</h3>
@@ -178,47 +375,47 @@
 
     <!-- 사진 갤러리 섹션 -->
     <section class="gallery-block">
-      <div class="wrap section-heading reveal">
+      <div class="wrap section-heading">
         <div>
           <span class="eyebrow">MOMENTS</span>
           <h2>사진으로 먼저 느껴보는 퀸즈케어의 편안함</h2>
         </div>
         <p>익숙하고 안락한 나만의 공간에서 누리는 최상의 힐링 모먼트입니다.</p>
       </div>
-      <div class="carousel-viewport" data-carousel>
+      <div class="carousel-viewport">
         <div class="carousel-track">
           <figure class="gallery-card">
-            <img src="https://quickhomecare.emperorweb.net/img/33.webp" alt="퀸즈케어 느린 호흡" width="920" height="1280" loading="lazy" decoding="async">
+            <img src="https://quickhomecare.emperorweb.net/img/33.webp" alt="퀸즈케어 느린 호흡">
             <figcaption><span>느린 호흡</span><i>01</i></figcaption>
           </figure>
           <figure class="gallery-card">
-            <img src="https://quickhomecare.emperorweb.net/img/61.webp" alt="퀸즈케어 포근한 시간" width="920" height="1280" loading="lazy" decoding="async">
+            <img src="https://quickhomecare.emperorweb.net/img/61.webp" alt="퀸즈케어 포근한 시간">
             <figcaption><span>포근한 시간</span><i>02</i></figcaption>
           </figure>
           <figure class="gallery-card">
-            <img src="https://quickhomecare.emperorweb.net/img/12.webp" alt="퀸즈케어 차분한 마무리" width="920" height="1280" loading="lazy" decoding="async">
+            <img src="https://quickhomecare.emperorweb.net/img/12.webp" alt="퀸즈케어 차분한 마무리">
             <figcaption><span>차분한 마무리</span><i>03</i></figcaption>
           </figure>
           <figure class="gallery-card">
-            <img src="https://quickhomecare.emperorweb.net/img/52.webp" alt="퀸즈케어 부드러운 이완" width="920" height="1280" loading="lazy" decoding="async">
+            <img src="https://quickhomecare.emperorweb.net/img/52.webp" alt="퀸즈케어 부드러운 이완">
             <figcaption><span>부드러운 이완</span><i>04</i></figcaption>
           </figure>
           <figure class="gallery-card">
-            <img src="https://quickhomecare.emperorweb.net/img/24.webp" alt="퀸즈케어 여유로운 저녁" width="920" height="1280" loading="lazy" decoding="async">
+            <img src="https://quickhomecare.emperorweb.net/img/24.webp" alt="퀸즈케어 여유로운 저녁">
             <figcaption><span>여유로운 저녁</span><i>05</i></figcaption>
           </figure>
           <figure class="gallery-card">
-            <img src="https://quickhomecare.emperorweb.net/img/40.webp" alt="퀸즈케어 편안한 자리" width="920" height="1280" loading="lazy" decoding="async">
+            <img src="https://quickhomecare.emperorweb.net/img/40.webp" alt="퀸즈케어 편안한 자리">
             <figcaption><span>편안한 자리</span><i>06</i></figcaption>
           </figure>
         </div>
       </div>
     </section>
 
-    <!-- ★ 퀸즈홈테라피 코스&가격정보 (5개 코스 정찰제 반영) -->
+    <!-- 코스 & 가격 정보 (5개 코스) -->
     <section class="section course-zone" id="courses">
       <div class="wrap">
-        <div class="section-heading reveal">
+        <div class="section-heading">
           <div>
             <span class="eyebrow">QUEENS HOME THERAPY</span>
             <h2>코스 & 가격 정보</h2>
@@ -226,7 +423,7 @@
           <p>컨디션에 맞춰 관리 방식과 시간을 한눈에 비교하고 선택해 보세요.</p>
         </div>
         
-        <div class="course-grid reveal">
+        <div class="course-grid">
           <!-- 01 건식 힐링 코스 -->
           <article class="course-card">
             <div class="course-head"><span>DRY HEALING</span><b>01</b></div>
@@ -291,7 +488,7 @@
 
     <!-- 서비스 원칙 -->
     <section class="section principles" id="about">
-      <div class="wrap principle-grid reveal">
+      <div class="wrap principle-grid">
         <article>
           <span>01</span>
           <h3>김포·고양 핫라인 신속방문</h3>
@@ -313,7 +510,7 @@
     <!-- 세부 지역 칩 링크 섹션 -->
     <section class="section places">
       <div class="wrap">
-        <div class="section-heading reveal">
+        <div class="section-heading">
           <div>
             <span class="eyebrow">NEAR YOU</span>
             <h2>김포·고양 & 수도권 방문 가능 지역</h2>
@@ -398,7 +595,7 @@
 
     <!-- 하단 클로징 배너 -->
     <section class="closing">
-      <div class="wrap closing-card reveal">
+      <div class="wrap closing-card">
         <div>
           <span class="eyebrow">TODAY</span>
           <h2>오늘 쉬고 싶은 시간에 맞춰<br>가볍게 확인해 보세요.</h2>
@@ -433,6 +630,5 @@
     <strong>0507-1280-3296</strong>
   </a>
 
-  <script src="assets/js/app.js"></script>
 </body>
 </html>
